@@ -149,9 +149,8 @@ cite img {
 
 
 .plans {
-    display: flex;
+    display: inline;
     justify-content: space-around;
-    padding: 2rem;
 }
 
 
@@ -160,17 +159,14 @@ cite img {
     font-size: 0.9rem;
     background-color: #fff;
     border-radius: 2.5rem;
-    width: 16rem;
-    margin-left: 1%;
-    margin-right: 1%;
-    height: 21rem;
+    min-width: 16rem;
     border: 2px;
     box-shadow: 2px 2px 10px grey, -2px -2px 5px grey;
     transform: scale(1);
     transition: 0.2s all;
 }
 
-.plan-box:hover {
+.plan-box:hover{
     transform: scale(1.02);
     border: 2px solid #e67e22;
     box-shadow: 0px 4px 3px grey;
@@ -180,13 +176,6 @@ cite img {
 .plan-box div {
     padding: 0.75rem;
     border-bottom: 1px solid #e8e8e8;
-}
-
-
-
-.plan-box div:last-child {
-    text-align: center;
-    border: 0;
 }
 
 
@@ -212,6 +201,18 @@ cite img {
 
 .plan-box ul li {
     padding: 0.25rem 0;
+} 
+
+.plans .plan-box-one{
+    transform: translateX(-200vw);
+    transition: all 1s ease-out;
+
+}
+
+.plans .plan-box-two{
+    transform: translateX(200vw);
+    transition: all 1s ease-out;
+
 }
 
 /*********************************************************************************/
