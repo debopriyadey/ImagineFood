@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- fontawesome css -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+   
+    <!-- W3 school css -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+	<!-- bootstrap CSS  -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+     
+    <!-- main css -->
+    <link rel="stylesheet" type="text/css" href="resources\css\style.css">
+
+	<!-- bootstrap JS, Popper.js, and jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+		integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    <!-- typed js  -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+
+    <!-- smooth scroll-->
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $("a").on('click', function (event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script><!-- smooth scroll ends-->
+    <!-- main script -->
+    <script type="application/x-javascript" src="./resources/script/app.js"> </script>
+
+    <title> Imagine Creation </title>
+</head>
+<body>
+
+    <!----------------------------HEADER------------------------------>
+    <header>
+        <div class="row header">
+            <div class="col-12">
+                <div class="container">
+                    <!-- navigation bar -->
+                    <nav class="navbar navbar-expand-sm navbar-dark">
+                        <a class="navbar-brand" href="#home"><h3 style="font-family:Snap ITC">Imagine</h2></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarTogglerDemo02" style="flex-flow: row-reverse;" >
+                            <ul class="navbar-nav" >
+                                <li class="nav-item"><a class="nav-link" href="about.html" target="_blank">ABOUT</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#projects">MENU</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <!-- navigation end -->
+                    <div class="row block-1">
+                        <div class="col-12">
+                            <div class="hero-text-box ">
+                                <h1>goodbye junk food.<br>Hello super healthy meals.</h1>
+                                <a href="#" class="btn btn-outline-light my-3">Take me to Menu</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!----------------------------ABOUT------------------------------>
+    <section class="container-fluid" style="background-color:#824b4b;">
+        <a name="about"></a>
+        <div class="container-fluid">
+            <div class="row justify-content-center" >
+                <div class="img col-sm-4" style="overflow:hidden; margin:10px; min-width:0px">
+                  <!--<img src="cafe2.jpg" alt="cafe img" class="rounded img-fluid">-->
+                </div>
+                <div class="col-sm-6 my-5" style="display:grid">
+                  <div style="text-align:center; align-self:center; color:white; font-family:forte; font-size:20px">
+                    <h2 class="text-center w3-xxxlarge"> About... </h1>
+                    <p>The Pizza Restaurant was founded in blabla by Mr. Italiano in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        The Chef? Mr. Italiano himself
+                        We are proud of our interiors.</p>
+                  </div>
+                    <div style="text-align:left; font-family:GENISO; align-self:center; color:white; font-size: 20px">
+                      opening hours <br>
+                      monday  -  friday  |  10:00 am  to  10:00 pm<br>
+                      satuday -  sunday  |  12:00 pm  to  10:00 pm<br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!----------------------------MENU------------------------------>
+
+
+    <!----------------------------TESTIMONIALS------------------------------>
+    <section class="section-testimonials">
+        <div>
+            <h2>Listen from our costomers </h2>
+        </div>
+        <div class="row testinomial">
+            <div class="col-md-3 test">
+                <blockquote>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt rerum eius harum nihil voluptatibus,
+                    ex placeat nemo tempora consequatur beatae minima at ipsa error maiores doloribus officia voluptas 
+                    cupiditate quasi.
+                    <cite><img src="resources/img/dp.jpeg">Alberto Duncan</cite>
+                </blockquote>
+            </div>
+            <div class="col-md-3 test">
+                <blockquote>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia iste rem ea laborum labore aspernatur 
+                    reiciendis itaque magni, ex nulla animi totam ad commodi sequi dolorem tenetur architecto? Quas, cum.
+                    
+                    <cite><img src="resources/img/dp.jpeg">Joana Silva</cite>
+                </blockquote>
+            </div>
+            <div class="col-md-3 test">
+                <blockquote>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quo modi, expedita possimus perferendis 
+                    pariatur officiis ea asperiores, corrupti distinctio omnis excepturi, consectetur totam officia reiciendis sit
+                    nihil qui. Praesentium!
+                    <cite><img src="resources/img/dp.jpeg">Milton Chapman</cite>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!----------------------------MEMBERSHIP------------------------------>
+
+    <!----------------------------FORM------------------------------>
+    <section>
+        <div class="container contact-form">
+            <div class="contact-image">
+                <img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact"/>
+            </div>
+            <form method="post">
+                <h3>Drop Us a Message</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" name="txtName" class="form-control" placeholder="Your Name *" value="" />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="txtEmail" class="form-control" placeholder="Your Email *" value="" />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="txtPhone" class="form-control" placeholder="Your Phone Number *" value="" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <textarea name="txtMsg" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5 justify-content-center">
+                    <div class="form-group" style="display: contents;">
+                        <input type="submit" name="btnSubmit" class="btnContact" value="Send Message" />
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!----------------------------FOOTER------------------------------>
+    <footer>
+        
+        <div class="container bottom_border">
+            <div class="row" style="justify-content: center;">
+                <div class=" col-sm-6 col-md col-sm-4  col-12 col">
+                    <h5 class="">Find us</h5>
+                    <!--headin5_amrc-->
+                    <p class="mb10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                    <p><i class="fa fa-location-arrow"></i> 9878/25 sec 9 roy 56 </p>
+                    <p><i class="fa fa-phone"></i>  +91-999999999  </p>
+                    <p><i class="fa fa fa-envelope"></i> info@example.com  </p>                
+                </div>
+            
+                <div class=" col-sm-4 col-md  col-6 col footer-nav" style="display: inline-grid;">
+                    <h5 class="pt2">Quick links</h5>
+                    <!--headin5_amrc-->
+                    <a href="http://webenlance.com">About</a>
+                    <a href="http://webenlance.com">Menu</a>
+                    <a href="http://webenlance.com">Testimonial</a>
+                    <a href="http://webenlance.com">Membership</a>
+                    <!--footer_ul_amrc ends here-->
+                </div>
+            
+            
+                <div class=" col-sm-4 col-md  col-12 col social-links" style="display: inline-grid;">
+                    <h5 class="">Follow us</h5>
+                    <!--headin5_amrc ends here-->                    
+                    <a href="#"><i class="fab fa-facebook "> Facebook</i> </p>
+                    <a href="#"><i class="fab fa-twitter "> Twitter</i> </p>
+                    <a href="#"><i class="fab fa-youtube "> YouTube</i> </p>
+                    <a href="#"><i class="fab fa-instagram "> Instagram</i> </p>
+                    </ul>
+                    <!--footer_ul2_amrc ends here-->
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!--foote_bottom_ul_amrc ends here-->
+        <p class="text-center pt-4 pb-1" style="color:aliceblue">&copy; created by DEBOPRIYA DEY </p>
+            
+    </footer>
+
+</body>
+</html>
