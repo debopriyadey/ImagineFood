@@ -1,4 +1,6 @@
- 
+ body {
+    overflow-x: hidden;
+ }
   header{
     background-image: linear-gradient(rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.54)), url('../img/cafe1.jpg');
     ;
@@ -90,6 +92,11 @@
 /*****************************************************/
 /*about*/
 /*****************************************************/
+@media screen and (max-width: 990px) { 
+    .intro-video {
+        display: none;
+    }
+}
 
 
 /*********************************************************************************/
@@ -146,14 +153,50 @@ cite img {
 /*********************************************************************************/
 /*membership*/ 
 /*********************************************************************************/
+.card:not(:empty):hover,
+.card:not(:empty):focus {
+  z-index: 1;
+  color: #fff;
+  background: #ea124f;
+  opacity: 1;
+  transform: scale(1.15) rotateZ(20deg);
+  cursor: pointer;
+}
+.card:not(:empty):hover:after,
+.card:not(:empty):focus:after {
+  opacity: 1;
+}
+.card:not(:empty):hover:before,
+.card:not(:empty):focus:before {
+  opacity: 0;
+}
 
+.card:not(:empty):before {
+  box-shadow: -2px 2px 8px 2px rgba(0, 0, 0, 0.2);
+}
+.card:empty {
+  opacity: 0.3;
+}
+.card:before, .card:after {
+  content: "";
+  position: absolute;
+  border-radius: 0.7em;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.4s cubic-bezier(0.33, 1, 0.68, 1);
+}
+.card:after {
+  box-shadow: -20px 20px 12px 6px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+}
 
 .plans {
     display: inline;
     justify-content: space-around;
 }
-
-
 
 .plan-box {
     font-size: 0.9rem;

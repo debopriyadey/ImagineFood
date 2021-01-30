@@ -108,12 +108,15 @@
         <a name="about"></a>
         <div class="container-fluid">
             <div class="row justify-content-center" >
-                <div class="img col-sm-4" style="overflow:hidden; margin:10px; min-width:0px">
+                <div class="intro-video col-md-0 col-lg-5" style="align-self: center;">
+                    <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
+                    </iframe>
                   <!--<img src="cafe2.jpg" alt="cafe img" class="rounded img-fluid">-->
                 </div>
                 <div class="col-sm-6 my-5" style="display:grid">
                   <div style="text-align:center; align-self:center; color:white; font-family:forte; font-size:20px">
                     <h2 class="text-center w3-xxxlarge"> About... </h1>
+                    <p>We serve <span id="typed" style="color: #cee029"></span></p>
                     <p>The Pizza Restaurant was founded in blabla by Mr. Italiano in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                         The Chef? Mr. Italiano himself
                         We are proud of our interiors.</p>
@@ -126,6 +129,19 @@
                 </div>
             </div>
         </div>
+        <script>
+            var typed = new Typed('#typed', {
+                strings: [
+                    "Happiness",
+                    "Content",
+                    "Sweetness",
+                    "Peace"
+                ],
+                typeSpeed: 70,
+                backSpeed: 50,
+                loop: true,
+            });
+        </script>
     </section>
 
     <!----------------------------MENU------------------------------>
