@@ -1,15 +1,22 @@
  body {
     overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background: hsla(0, 5%, 5%, 1);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: linear-gradient(to right top, hsla(0, 5%, 15%, 0.5), hsla(0, 5%, 5%, 1));
+    background-image: -moz-linear-gradient(to right top, hsla(0, 5%, 15%, 0.5), hsla(0, 5%, 5%, 1));
  }
   header{
     background-image: linear-gradient(rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.54)), url('../img/cafe1.jpg');
-    ;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     float: right;
-    height: 100%;
+    height: 100vh;
     width: 100%;
   }
 
@@ -98,6 +105,110 @@
     }
 }
 
+/*****************************************************/
+/*menu*/
+/*****************************************************/
+  
+  .product_container {
+    width: 380px;
+    height: 500px;
+    position: relative;
+  }
+  
+  .product {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    box-shadow: -3px 0px 10px -2px rgba(0, 0, 0, 0.14);
+    opacity: 0;
+    transition: all 1s ease 0.5s;
+  }
+  .product .title {
+    font-size: 19px;
+    padding-bottom: 10px;
+    font-weight: bolder;
+  }
+  .product .price {
+    font-size: 20px;
+  }
+  .product .image {
+    width: 40%;
+    padding: 30px 0;
+    transform: scale(2.5);
+  }
+  
+  .product > * {
+    transform: translateY(-50px);
+    opacity: 0;
+    transition: all 0.8s ease;
+  }
+  
+  .product:target {
+    opacity: 1;
+    z-index: 7;
+  }
+  .product:target .title {
+    transition-delay: 1.2s;
+  }
+  .product:target .price {
+    transition-delay: 0.6s;
+  }
+  .product:target .image {
+    transform: scale(1);
+    transition-delay: 0.8s;
+  }
+  .product:target .color {
+    transition-delay: 1s;
+  }
+  
+  .product:target > * {
+    transform: translateY(0px);
+    opacity: 1;
+    transition: all 0.8s ease;
+  }
+  
+  #product_one, .first_link {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.54)), url("https://images.unsplash.com/photo-1484980972926-edee96e0960d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTZ8fGZvb2R8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  #product_two, .second_link {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.54)), url("https://images.unsplash.com/photo-1484723091739-30a097e8f929?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTd8fGZvb2R8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+  #product_three, .third_link {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.54)), url("https://images.unsplash.com/photo-1482049016688-2d3e1b311543?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9vZHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+  #product_four, .fourth_link {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.54)), url("https://images.unsplash.com/photo-1506459225024-1428097a7e18?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzR8fGZvb2R8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+  
+  .nav_btns {
+    display: flex;
+    z-index: 70;
+    position: relative;
+    bottom: 10px;
+    transform: translateX(-50%);
+  }
+  .nav_btns .link {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    border: 5px solid white;
+  }
 
 /*********************************************************************************/
 /*testinomial*/
@@ -218,7 +329,6 @@ cite img {
 
 .plan-box div {
     padding: 0.75rem;
-    border-bottom: 1px solid #e8e8e8;
 }
 
 
