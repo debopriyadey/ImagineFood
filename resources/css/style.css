@@ -142,6 +142,78 @@ cite img {
     vertical-align: middle;
 }
 
+
+/*********************************************************************************/
+/*membership*/ 
+/*********************************************************************************/
+
+
+.plans {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+
+
+.plan-box {
+    font-size: 0.9rem;
+    background-color: #fff;
+    border-radius: 2.5rem;
+    width: 16rem;
+    margin-left: 1%;
+    margin-right: 1%;
+    height: 21rem;
+    border: 2px;
+    box-shadow: 2px 2px 10px grey, -2px -2px 5px grey;
+    transform: scale(1);
+    transition: 0.2s all;
+}
+
+.plan-box:hover {
+    transform: scale(1.02);
+    border: 2px solid #e67e22;
+    box-shadow: 0px 4px 3px grey;
+  font-size: 0.9rem;
+}
+
+.plan-box div {
+    padding: 0.75rem;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+
+
+.plan-box div:last-child {
+    text-align: center;
+    border: 0;
+}
+
+
+.plan-price {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    font-weight: 100;
+    color: #e67e22;
+}
+
+.plan-price span {
+    font-size: 30%;
+    font-weight: 300;
+}
+
+.plan-price-meal {
+    font-size: 80%;
+}
+
+.plan-box ul {
+    list-style: none;
+}
+
+.plan-box ul li {
+    padding: 0.25rem 0;
+}
+
 /*********************************************************************************/
 /*form*/ 
 /*********************************************************************************/
