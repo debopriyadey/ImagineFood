@@ -1,1 +1,1 @@
-##this is a resturant website
+## This is a static resturant website
