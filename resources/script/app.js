@@ -1,3 +1,8 @@
+window.onresize = function(event)
+{
+document.location.reload(true);
+}
+
 if (document.location.hash == "" || document.location.hash == "#")
 document.location.hash = "#product_one";
 
@@ -40,3 +45,4 @@ window.addEventListener('scroll',function(){
 }
 
 )
+
